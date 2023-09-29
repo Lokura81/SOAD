@@ -1,0 +1,46 @@
+.img-soad {
+    display: block;
+    width: 75%;
+    margin: -40px auto 60px;
+    z-index: 999;
+    transform: rotate(-2deg);
+}
+
+
+div.vid video {
+    margin: 10px auto;
+    width: 75%;
+    max-height: 600px;
+    background-color: black;
+    /* margin-inline: auto; */
+    display: block;
+    border: 5px solid white;
+    border-radius: 18px;
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+div.texto {  
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    width: 1000px;
+    margin-inline: auto;
+    margin-bottom: 40px;
+    padding-bottom:20px; 
+    padding-top: 20px;
+}
+
+div.texto p {
+    color: white;
+    text-align: justify;
+    padding-bottom: 20px;
+    margin-inline: 40px; 
+    line-height: 30px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

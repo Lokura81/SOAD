@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOAD Band Page</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/galeria.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+    </script>
+</head>
+<body>
+   <div class="big-container">
+
+        <nav class="navbar">
+            <div class="small-logo">
+                <img class="logo" src="assets/img/logo-hand.png" alt="logo">
+            </div>
+            <div class="navmenu">
+                    <a href="index.html">Home</a>
+                    <a href="gira.html">Gira</a>
+                    <a href="musica.html">Música</a>
+                    <a  class="active" href="galeria.html">Galeria</a>
+            </div>
+            <div class="navmenu">
+                    <a href="login.html">Login</a>
+                    <a href="registro.html">Registro</a>
+            </div>
+        </nav>
+
+        <main class="main">
+<h1 class="page-title"> galeria</h1>
+            <div class="grid-container">
+                <div class="grid-item" ><img class="zoom" src="assets/img/galeria/1.jpg" alt=""  onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
+                <div class="grid-item"><img class="zoom" src="assets/img/galeria/2.jpg" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
+                <div class="grid-item"><img class="zoom" src="assets/img/galeria/3.webp" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow" ></div>
+                <div class="grid-item"><img class="zoom" src="assets/img/galeria/4.jpeg" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow"></div>
+                <div class="grid-item"><img class="zoom" src="assets/img/galeria/5.jpg" alt="" onclick="openModal();currentSlide(5)"></div>
+                <div class="grid-item"><img class="zoom" src="assets/img/galeria/6.jpg" alt="" onclick="openModal();currentSlide(6)"></div>
+                <div class="grid-item"><img  class="zoom" src="assets/img/galeria/7.jpg" alt="" onclick="openModal();currentSlide(7)"></div>
+                <div class="grid-item"><img class="zoom"src="assets/img/galeria/8.jpg" alt="" onclick="openModal();currentSlide(8)" ></div>
+                <div class="grid-item"><img class="zoom"src="assets/img/galeria/9.jpg" alt="" onclick="openModal();currentSlide(9)"></div>
+                <div class="grid-item"><img class="zoom" src="assets/img/galeria/10.jpg" alt="" onclick="openModal();currentSlide(10)"></div>
+                <div class="grid-item"><img class="zoom"src="assets/img/galeria/11.jpg" alt="" onclick="openModal();currentSlide(11)"></div>
+                <div class="grid-item"><img class="zoom"src="assets/img/galeria/12.jpg" alt="" onclick="openModal();currentSlide(12)"></div>
+                <div class="grid-item"><img class="zoom"src="assets/img/galeria/13.png" alt="" onclick="openModal();currentSlide(13)"></div>
+                <div class="grid-item"><img class="zoom"src="assets/img/galeria/14.jpg" alt="" onclick="openModal();currentSlide(14)"></div>
+                <div class="grid-item"><img class="zoom"src="assets/img/galeria/15.jpg" alt="" onclick="openModal();currentSlide(15)"></div>
+                <div class="grid-item"><img class="zoom"src="assets/img/galeria/16.jpg" alt="" onclick="openModal();currentSlide(16)"></div>
+                <div class="grid-item"><img class="zoom"src="assets/img/galeria/17.jpg" alt="" onclick="openModal();currentSlide(17)"></div>
+                <div class="grid-item"><img class="zoom"src="assets/img/galeria/18.jpg" alt="" onclick="openModal();currentSlide(18)"></div>
+                <div class="grid-item"><img class="zoom"src="assets/img/galeria/19.jpg" alt="" onclick="openModal();currentSlide(19)"></div>
+                <div class="grid-item"><img class="zoom"src="assets/img/galeria/20.jpg" alt="" onclick="openModal();currentSlide(20)"></div>
+        <div class="enlarged"></div>
+            </div>
+        <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/1.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/2.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/3.webp" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/4.jpeg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/5.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/6.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/7.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/8.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/9.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/10.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/11.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/12.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/13.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/14.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/15.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/16.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/17.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/18.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/19.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="assets/img/galeria/20.jpg" style="width:100%">
+      </div>
+
+        </main>
+        
+        <footer class="footer">
+            <div class="small-logo">
+                <img class="logo" src="assets/img/logo-hand.png" alt="logo">
+            </div>
+            <div class="social">
+              <a href="https://youtube.com/@systemofadown"target="_blank" ><img class="social-logo" src="assets/img/youtube.png" ></a>
+              <a href="https://www.instagram.com/systemofadown/" target="_blank"><img class="social-logo" src="assets/img/instagram.png" ></a>
+              <a href="https://www.facebook.com/systemofadown" target="_blank"><img class="social-logo" src="assets/img/facebook.png" ></a>
+          </div>
+            <div class="authors">
+                <span>created by</span>
+                <span>Montse, Mercè, Raúl</span>  
+                <span>&copy;2023</span>
+            </div>
+        </footer>
+
+    </div>
+</body>

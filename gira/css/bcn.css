@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'crack';
+  src: url(../fonts/Crackvetica.ttf);
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+body {
+    /* añadir color transparente y multiuplicar para mexclar con imagen de fondo */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    font-family: verdana;
+}
+div#container {
+    width: 900px;
+  height: 1300px;
+  background-color: rgba(0, 0, 0, 0.341);
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: solid black;
+}
+div#container h2 {
+  font-family: crack;
+    color: rgb(202, 200, 200);
+    margin-top: 20px;
+    margin-left: 72px;
+    letter-spacing: 5px;
+}
+div#container  img {
+    margin-left: 70px;
+    margin-top: 40px;
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+}
+form {
+  margin-top: 40px;
+  margin-left: 20px;
+  color: white;
+  width: 400px;
+  
+}
+form fieldset {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+fieldset.iz {
+  display: block;
+  width: 400px;
+  height: 120px;
+}
+fieldset.up {
+  width: 400px;
+  display: block;
+  margin-left: 110%;
+  margin-top: -29%;
+
+}
+
+#cat2 {
+    margin-left: 140px;
+}
+#cat4 {
+  margin-left: 140px;
+}
+#backstage {
+  margin-left: 35px;
+}
+form #compra {
+  margin-left: 5px;
+  margin-top: 40px;
+}

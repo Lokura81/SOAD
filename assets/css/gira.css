@@ -1,0 +1,260 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+body {
+    /* añadir color transparente y multiuplicar para mexclar con imagen de fondo */
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    font-family: verdana;
+}
+main h1.page-title {
+margin-top: 30px;
+}
+div.section {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+div.bcn {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px; 
+}
+div.bcn p.city {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    font-size: 18px;
+   font-weight: bold;
+   margin-left: 20px;
+}
+div.bcn p {
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    font-size: 19px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+} 
+div.bcn img {
+    width: 400px;
+    margin-left: 20px;
+}
+div.lon {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+   
+}
+div.lon p.city {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    font-size: 18px;
+   font-weight: bold;
+   margin-left: 20px;
+}
+div.lon p {
+    margin-left: 20px;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+} 
+div.lon img {
+    margin-left: 20px;
+    width: 400px;
+    height: 270px;
+}
+
+div.p {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px; 
+     
+}
+div.p p.city {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+div.p p {
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    font-weight: bold;
+    margin-left: 25px;
+    text-shadow: 1px 1px 1px black;
+} 
+div.p img {
+    margin-left: 20px;
+    width: 400px;
+    height: 270px;
+}
+div.can {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+div.can p.city {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+div.can p {
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    font-weight: bold;
+    margin-left: 25px;
+    text-shadow: 2px 2px 1px black;
+} 
+div.can img {
+    margin-left: 20px;
+    width: 400px;
+    height: 270px;
+}
+    
+
+div.ny {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+div.ny p.city {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+div.ny p {
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    font-weight: bold;
+    margin-left: 25px;
+    text-shadow: 1px 1px 1px black;
+} 
+div.ny img {
+    margin-left: 20px;
+    width: 400px;
+    height: 270px;
+}
+div.be {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;  
+}
+div.be p.city {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+div.be p {
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    font-weight: bold;
+    margin-left: 25px;
+    text-shadow: 2px 2px 1px black;
+} 
+div.be img {
+    margin-left: 20px;
+    width: 400px;
+    height: 270px;
+}
+div.dina {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;  
+}
+div.dina p.city {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+div.dina p {
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    font-weight: bold;
+    margin-left: 25px;
+    text-shadow: 2px 2px 1px black;
+} 
+div.dina img {
+    margin-left: 20px;
+    width: 400px;
+    height: 270px;
+   
+}
+div.sue {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+div.sue p.city {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+div.sue p {
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    font-weight: bold;
+    margin-left: 25px;
+    text-shadow: 2px 2px 1px black;
+} 
+div.sue img {
+    margin-left: 20px;
+    width: 400px;
+    height: 270px;
+    
+}
+img.zoom:hover {
+transform: scale(1.1);
+border: solid white;
+} 
+input#cat2 {
+    text-align: right;
+}
+

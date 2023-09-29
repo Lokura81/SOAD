@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOAD Band Page</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../gira/css/bcn.css">
+
+</head>
+
+<body>
+    <div class="big-container">
+
+        <nav class="navbar">
+            <div class="small-logo">
+                <img class="logo" src="../assets/img/logo-hand.png" alt="logo">
+            </div>
+            <div class="navmenu">
+                <a href="index.html">Home</a>
+                <a class="active" href="gira.html">Gira</a>
+                <a href="musica.html">Música</a>
+                <a href="galeria.html">Galeria</a>
+            </div>
+            <div class="navmenu">
+                <a href="login.html">Login</a>
+                <a href="registro.html">Registro</a>
+            </div>
+        </nav>
+
+        <main>
+            <div>
+                <h1 class="page-title">Entradas</h1>
+                <div id="container">
+                    <h2>Elige tu localidad</h2>
+                    <img src="../assets/img/gira/asientos psj.png" alt="img">
+                    <div id="article">
+                        <form role="form" name="formu">
+                            <fieldset class="iz">
+                                <legend>Datos personales</legend>
+                                <label for="nombre"> <span id="nc" ></span> Nombre completo:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+
+                                <br><label for="correo"> <span id="ce"></span>Correo electrónico:</label>
+                                <input type="email" id="correo" name="correo" required>
+
+                                <br><label for="telefono"> <span id="t"></span>Número de teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+                            </fieldset>
+                            <fieldset class="up">
+                                <legend>Tipo de entrada:</legend>
+                                <label for="general">
+                                    <input type="radio" id="cat1" name="tipoentrada" value="general" required>CAT 1
+                                    - __€
+                                </label>
+                                <label for="general">
+                                    <input type="radio" id="cat2" name="tipoentrada" value="general" required>CAT 2
+                                    - __€
+                                </label><br>
+                                <label for="general">
+                                    <input type="radio" id="cat3" name="tipoentrada" value="general" required>CAT 3
+                                    - __€
+                                </label>
+                                <label for="general">
+                                    <input type="radio" id="cat4" name="tipoentrada" value="general" required>CAT 4
+                                    - __€
+                                </label><br>
+                                <label for="golden circle">
+                                    <input type="radio" id="goldencircle" name="tipoentrada" value="golden circle"
+                                        required>Golden Circle - ___€
+                                </label>
+                                <label for="backstage">
+                                    <input type="radio" id="backstage" name="tipoentrada" value="backstage"
+                                        required>Backstage - __€
+                                </label> <br>                                
+                                <p id="selec"></p>
+                                <label for="cantidad"> <span id="e"></span>Cantidad de entradas:</label>
+
+                                <input type="number" id="cantidad" name="cantidad" min="1" max="10" required>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Forma de pago:</legend>
+                                <label for="tarjeta">
+                                    <input type="radio" id="tarjeta" name="formapago" value="tarjeta" required> Tarjeta
+                                    de crédito
+                                </label>
+                                <label for="transferencia">
+                                    <input type="radio" id="transferencia" name="formapago" value="transferencia"
+                                        required>Transferencia bancaria<br>
+                                </label>
+
+
+                                <label for="numtarjeta"><span id="tc"></span>Número de tarjeta:</label>
+                                <input type="text" id="numtarjeta" name="numtarjeta" required><br>
+
+    
+                                <label for="fechaexpiracion"><span id="fe"></span> Fecha de expiración:</label>
+                                <input type="month" id="fechaexpiracion" name="fechaexpiracion" required><br>
+
+                                <label for="codigoseguridad"><span id="co"></span> Código de seguridad:</label>
+                                <input type="number" id="codigoseguridad" name="codigoseguridad" min="100" max="999"
+                                    required>
+                            </fieldset>
+                            <fieldset class="up">
+                                <legend>Detalles</legend>
+                                <label for="medio_enterado">¿Cómo se enteró del concierto?</label>
+                                <select id="medio_enterado" name="medio_enterado">
+                                    <option value="redes_sociales">Redes sociales</option>
+                                    <option value="radio">Radio</option>
+                                    <option value="tv">TV</option>
+                                    <option value="amigos_familiares">Amigos/Familiares</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </fieldset><br>
+                            <input type="button" value="Comprar entradas" id="compra" onclick="entradas();">
+                        </form>
+
+
+                    </div>
+        </main>
+        <footer class="footer">
+            <div class="small-logo">
+                <img class="logo" src="../assets/img/logo-hand.png" alt="logo">
+            </div>
+            <div class="social">
+                <a href="#"><img class="social-logo" src="../assets/img/email.png"></a>
+                <a href="#"><img class="social-logo" src="../assets/img/instagram.png"></a>
+                <a href="#"><img class="social-logo" src="../assets/img/facebook.png"></a>
+            </div>
+            <div class="authors">
+                <span>created by</span>
+                <span>Montse, Mercé, Rául</span>
+                <span>&copy;2023</span>
+            </div>
+        </footer>
+        <script src="../assets/js/gira.js"></script>
+</body>
+
+</html>
